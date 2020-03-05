@@ -139,13 +139,13 @@ int main(int argc, char** argv) {
 
 		// Extract the output filename from the path
 		//wstring a_path_string = a_path.wstring();
-		int start_pos = report_path.find_last_of(L"\\");
-		wstring a_file_name = report_path.substr(start_pos + 1);
-		wstring a_output_file_name = a_path.parent_path().wstring() + L"\\" + a_file_name + L".txt";
+		// int start_pos = report_path.find_last_of(L"\\");
+		// wstring a_file_name = report_path.substr(start_pos + 1);
+		// wstring a_output_file_name = a_path.parent_path().wstring() + L"\\" + a_file_name + L".txt";
 		
 		// Extract the submitted students' name string list
 		vector<wstring> submitted_student_list;
-		extract_name_wstr_from_files(a_path, a_output_file_name, submitted_student_list);
+		extract_name_wstr_from_files(a_path, output_file_path, submitted_student_list);
 		
 		// Load the full students' name list
 		vector<wstring> full_student_list;
